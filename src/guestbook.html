@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./guestbook.css"> 
+    <title>방명록을남기게되</title>
+</head>
+<body>
+    <main>
+        <header>
+                <strong>JOEY&JOO's<br>GuestBook</strong>
+        </header>
+        <article id = "postbox">
+            <form id="Data">
+                <input type="text" id="writerInput" placeholder="작성자"/>
+                <input type="password" id="passwordInput" placeholder="비밀번호"/><br>
+                <input type="text" id="titleInput" placeholder="제목"/><br>
+                <textarea id="contentInput" placeholder="내용" required></textarea><br>
+                <div class="button-container">
+                    <button type="submit">작성</button>
+                </div>
+            </form>
+        </article>
+        <h1><img src="./images/sheep5.jpeg"><br>방명록을 남기게되</h1>
+        <div id="container">
+        </div>
+    </main>
+    <footer>
+        <a href="#" title="inhee">
+            <img src="./images/joo.jpeg">
+        </a>
+        <h3>
+            made by.<br>Front 유빈 & Back 영주
+        </h3>
+        <a href="#" title="inspired by my precious friend, SeoHyeon">
+            <img src="./images/Shaun.jpeg">
+        </a>
+    </footer>
+    <script src="./guestbook.js"></script>
+    <script>
+        window.onload = function(){
+            getData();
+        };
+    </script>
+</body>
+</html>

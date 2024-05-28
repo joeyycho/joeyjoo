@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Gaegu&family=Gugi&display=swap');
+@font-face{
+    font-family: 'shaun';
+    src: url(./font/Shaun_the_Sheep.ttf);
+}
+header {
+    color: aliceblue;
+    background: url(./images/sheep1.jpeg) center;
+    background-size: cover;
+    height: 40vh;
+    font-family: 'shaun';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    color: black;
+    background: url(./images/grass1.jpeg) repeat;
+    background-color: rgb(147, 155, 85);
+}
+strong{
+    font-size: 60px; 
+    display: inline-block;
+    color: #ffffff;
+    text-shadow: 2px 2px 0 #000000,
+                 4px 4px 0 #555555, 
+                 6px 6px 0 #aaaaaa;
+    -webkit-text-stroke: 0.001rem #000000; 
+}
+h3{
+    text-align: center;
+}
+footer{
+    font-family: "Gaegu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: space-around;
+    flex-direction: row;
+    display: flex;
+    color: aliceblue;
+}
+h1{
+    font-family: "Gaegu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+img{
+    height: 15vh;
+}
+#Data{
+    margin: 5%;
+    background-color: rgb(228,210,156);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: none;
+}
+button {
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(64,60,60);
+    border-radius: 3px;
+}
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+    border-color: transparent;
+}
+#postbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
+#container{
+    font-family: "Gaegu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-bottom: 10%;
+    background-color: transparent;
+    border: transparent;
+}
+
+div{
+    border-radius: 10px;
+    border: 20px solid rgb(130, 110, 77);
+    flex: 0 0 calc(33.333% - 20px);
+    margin-bottom: 20px; 
+    box-sizing: border-box; 
+    background-color: rgb(130, 110, 77); 
+
+}
