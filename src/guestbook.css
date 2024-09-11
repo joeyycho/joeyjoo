@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Gaegu&family=Gugi&display=swap');
-@font-face{
+
+@font-face {
     font-family: 'shaun';
     src: url(./font/Shaun_the_Sheep.ttf);
 }
+
 header {
-    color: aliceblue;
     background: url(./images/sheep1.jpeg) center;
     background-size: cover;
     height: 40vh;
@@ -13,12 +14,14 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 body {
     color: black;
     background: url(./images/grass1.jpeg) repeat;
     background-color: rgb(147, 155, 85);
 }
-strong{
+
+strong {
     font-size: 60px; 
     display: inline-block;
     color: #ffffff;
@@ -27,10 +30,12 @@ strong{
                  6px 6px 0 #aaaaaa;
     -webkit-text-stroke: 0.001rem #000000; 
 }
-h3{
+
+h3 {
     text-align: center;
 }
-footer{
+
+footer {
     font-family: "Gaegu", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -39,23 +44,27 @@ footer{
     display: flex;
     color: aliceblue;
 }
-h1{
+
+h1 {
     font-family: "Gaegu", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align: center;
 }
-img{
+
+img {
     height: 15vh;
 }
-#Data{
+
+#Data {
     margin: 5%;
-    background-color: rgb(228,210,156);
+    background-color: rgb(228, 210, 156);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 300px;
 }
+
 textarea {
     width: 100%;
     height: 100px;
@@ -63,29 +72,37 @@ textarea {
     font-size: 14px;
     resize: none;
 }
+
 button {
     cursor: pointer;
+    border-radius: 3px;
+    background-color: whitesmoke;
 }
+
 button:hover {
-    background-color: rgb(64,60,60);
+    background-color: rgb(64, 60, 60);
     border-radius: 3px;
 }
+
 .button-container {
     display: flex;
     justify-content: flex-end;
     background-color: transparent;
     border-color: transparent;
 }
+
 #postbox {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.right{
+
+.right {
     display: flex;
     justify-content: flex-end;
 }
-#container{
+
+#container {
     font-family: "Gaegu", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -99,12 +116,51 @@ button:hover {
     border: transparent;
 }
 
-div{
+div {
     border-radius: 10px;
     border: 20px solid rgb(130, 110, 77);
-    flex: 0 0 calc(33.333% - 20px);
+    flex: 0 1 calc(33.333% - 20px);
     margin-bottom: 20px; 
     box-sizing: border-box; 
     background-color: rgb(130, 110, 77); 
+}
 
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        height: 20vh;
+    }
+
+    strong {
+        font-size: 50px;  
+    }
+
+    footer {
+        font-size: 13px;
+    }
+
+    img {
+        height: 10vh;
+    }
+
+    #Data {
+        margin: 5%;
+        background-color: rgb(228, 210, 156);
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        height: 200px;
+    }
+
+    div {
+        flex: 0 1 80%; /* Full width on small screens */
+        margin-bottom: 20px; 
+    }
+
+    #container {
+        width: 100%;
+        padding-left: 0; /* Remove horizontal padding */
+        padding-right: 0; /* Remove horizontal padding */
+    }
 }
